@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS Perspective - ProfaTech</title>
-    <link rel="stylesheet" href="main.css">
+    <title>CSS Perspective</title>
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 <body>
     <div class="bg"></div>
@@ -19,7 +20,7 @@
         </div>
         <div id="right">
             <ul>
-                <li id="myBtn">
+                <li data-toggle="modal" data-target="#myModal">
                     <img src="img/appcoins.svg">
 
 
@@ -28,14 +29,14 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </span>
                 </li>
-                <li>
+                <li data-toggle="modal" data-target="#myModal1">
                     <img src="img/ethos.svg">
                     <span>
                         <strong>ETHOS</strong>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </span>
                 </li>
-                <li>
+                <li data-toggle="modal" data-target="#myModal2">
                     <img src="img/iota-1.svg">
                     <span>
                         <strong>IOTA</strong>
@@ -46,25 +47,71 @@
 
         </div>
     </div>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    
-<!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2>Modal Header</h2>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="AppCoinsbg">
+          <h5 class="modal-title" id="myModal">AppCoins</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
+            <img src="img/appcoins.svg">
+            <span>
+                <strong>AppCoins</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit distinctio recusandae, quod magni doloremque ipsam facilis explicabo, fugiat ab incidunt illo quos molestias quasi deserunt, id labore hic minima? Voluptatem nesciunt quaerat iusto quae, explicabo alias facere assumenda eaque esse repellat molestiae, eos modi placeat hic! Perspiciatis ad non placeat, rem ratione magni tenetur aut impedit vero incidunt velit dolorem commodi sit explicabo nostrum ullam nemo minima error saepe obcaecati est rerum. Deleniti fugiat quibusdam aut iure modi! Blanditiis fugiat quidem ea quas facere perferendis cum dicta assumenda voluptatum nesciunt voluptates libero, maiores dolores veniam molestias similique incidunt sunt temporibus quasi quia eaque. Reiciendis perferendis incidunt dolorum error quod animi, quam quae maxime soluta ullam temporibus laboriosam quis, eligendi earum quisquam, pariatur totam doloribus fugiat velit maiores recusandae! Asperiores eaque cupiditate, perspiciatis voluptatem quia esse reiciendis, quasi obcaecati neque necessitatibus expedita error nostrum earum blanditiis dolor explicabo odio, ea dolorem officiis. Error odio quia, omnis laboriosam eos pariatur placeat id inventore neque illo. Quaerat amet quis minus, nostrum quidem impedit nisi harum dolor velit ex, ad molestias voluptatum? Dicta qui odio sit ab, quisquam quod pariatur doloremque doloribus magnam quasi soluta vel nihil officiis fugit! Dignissimos perspiciatis sint omnis!</p>
+            </span>
         </div>
-        <div class="modal-footer">
-          <h3>Modal Footer</h3>
-        </div>
+      
+      </div>
     </div>
-    
 </div>
-<script src="script.js"></script> 
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="Ethosbg">
+          <h5 class="modal-title" id="myModal1">ETHOS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/ethos.svg">
+            <span>
+                <strong>ETHOS</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit distinctio recusandae, quod magni doloremque ipsam facilis explicabo, fugiat ab incidunt illo quos molestias quasi deserunt, id labore hic minima? Voluptatem nesciunt quaerat iusto quae, explicabo alias facere assumenda eaque esse repellat molestiae, eos modi placeat hic! Perspiciatis ad non placeat, rem ratione magni tenetur aut impedit vero incidunt velit dolorem commodi sit explicabo nostrum ullam nemo minima error saepe obcaecati est rerum. Deleniti fugiat quibusdam aut iure modi! Blanditiis fugiat quidem ea quas facere perferendis cum dicta assumenda voluptatum nesciunt voluptates libero, maiores dolores veniam molestias similique incidunt sunt temporibus quasi quia eaque. Reiciendis perferendis incidunt dolorum error quod animi, quam quae maxime soluta ullam temporibus laboriosam quis, eligendi earum quisquam, pariatur totam doloribus fugiat velit maiores recusandae! Asperiores eaque cupiditate, perspiciatis voluptatem quia esse reiciendis, quasi obcaecati neque necessitatibus expedita error nostrum earum blanditiis dolor explicabo odio, ea dolorem officiis. Error odio quia, omnis laboriosam eos pariatur placeat id inventore neque illo. Quaerat amet quis minus, nostrum quidem impedit nisi harum dolor velit ex, ad molestias voluptatum? Dicta qui odio sit ab, quisquam quod pariatur doloremque doloribus magnam quasi soluta vel nihil officiis fugit! Dignissimos perspiciatis sint omnis!</p>
+            </span>
+        </div>
+      
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="Iotabg">
+          <h5 class="modal-title" id="myModal2">IOTA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/ethos.svg">
+            <span>
+                <strong>IOTA</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit distinctio recusandae, quod magni doloremque ipsam facilis explicabo, fugiat ab incidunt illo quos molestias quasi deserunt, id labore hic minima? Voluptatem nesciunt quaerat iusto quae, explicabo alias facere assumenda eaque esse repellat molestiae, eos modi placeat hic! Perspiciatis ad non placeat, rem ratione magni tenetur aut impedit vero incidunt velit dolorem commodi sit explicabo nostrum ullam nemo minima error saepe obcaecati est rerum. Deleniti fugiat quibusdam aut iure modi! Blanditiis fugiat quidem ea quas facere perferendis cum dicta assumenda voluptatum nesciunt voluptates libero, maiores dolores veniam molestias similique incidunt sunt temporibus quasi quia eaque. Reiciendis perferendis incidunt dolorum error quod animi, quam quae maxime soluta ullam temporibus laboriosam quis, eligendi earum quisquam, pariatur totam doloribus fugiat velit maiores recusandae! Asperiores eaque cupiditate, perspiciatis voluptatem quia esse reiciendis, quasi obcaecati neque necessitatibus expedita error nostrum earum blanditiis dolor explicabo odio, ea dolorem officiis. Error odio quia, omnis laboriosam eos pariatur placeat id inventore neque illo. Quaerat amet quis minus, nostrum quidem impedit nisi harum dolor velit ex, ad molestias voluptatum? Dicta qui odio sit ab, quisquam quod pariatur doloremque doloribus magnam quasi soluta vel nihil officiis fugit! Dignissimos perspiciatis sint omnis!</p>
+            </span>
+        </div>
+      
+      </div>
+    </div>
+</div
+
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
