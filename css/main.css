@@ -149,6 +149,10 @@ h1{
         display:none;
     }
 
+    .container #right{
+        right: 20px;
+    }
+
     .container{
         position: absolute;
         top:230px;
