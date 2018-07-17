@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        Author: Adnan Rekic
+        Version: 3
+        Contact:adnan.rekic@gmail.com
+                +436781223896
+                http://profatech.github.io
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>POSLOVNI LISTING</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Trazim</title>
 </head>
 <body>
-    <div class="bg"></div>
-
-    <div class="container">
-        <div id="left">
-            <h1>POSLOVNI LISTING</h1>
-            <p>Svrha ove stranice jeste da pomogne ljudima iz Hrvatske, Bosne i Hercegovine, Srbije i Slovenije da pronadju Doktore, Advokate, Apotekare ...<br>
-             koji pričaju Ex-Yu jezike, radi lakše kominikacije.<br>Liste će se dopunjavati kako budemo dobijali nove informacije 
-             a ako znate nekog da nije na listi molim Vas da nam pošaljete email na poslovneliste@gmail.com sa detaljnim informacijama kao na listama.<br><br>
-             Nadam se da će Vam biti od koristi a za sve prijedloge, kritike i sugestije pišite nam na isti email.</p>
+<div class="bg"></div>
+<div class="search">
+    <h2 id="h2">TRAŽIM</h2>
+    <p class="opis">Doktore, Advokate, Apotekare, Bankare i Poreznike koji pricaju ExYu jezike u Gracu i okolini.</p>
+        <select id="trazim" class="form-control">
+            <option></option>
+            <option value="#myModal">Doktora / Artz</option>
+            <option value="#myModal2">Advokata / Anwalt</option>
+            <option value="#myModal3">Apoteka</option>
+            <option value="#myModal4">Banka</option>
+            <option value="#myModal5">Porezni savjetnik / Steuerberater</option>
+        </select>
+        <div class="footer">
+            <p id="footer">Copyright <a href="profatech.github.io">ProfaDesign</a> &copy; 2018</p>
         </div>
-        <div id="right">
-            <ul><!-- DOKTORI -->
-                <li data-toggle="modal" data-target="#myModal">
-                    <img class="ico" src="img/ico/stethoscope.svg">
-                    <span>
-                        <strong>DOKTORI</strong>
-                        <p>Lista doktora u Grazu i okolini koji pričaju Ex-Yu jezike.</p>
-                    </span>
-                </li>
-                <!-- ADVOKATI -->
-                <li data-toggle="modal" data-target="#myModal1">
-                    <img class="ico" src="img/ico/lawyer.svg">
-                    <span>
-                        <strong>ADVOKATI</strong>
-                        <p>Lista advokata u Grazu i okolini koji pričaju Ex-Yu jezike.</p>
-                    </span>
-                </li>
-                <!-- APOTEKARI -->
-                <li data-toggle="modal" data-target="#myModal2">
-                    <img class="ico" src="img/ico/medicine.svg">
-                    <span>
-                        <strong>APOTEKARI</strong>
-                        <p>Lista apotekara u Grazu i okolini koji pričaju Ex-Yu jezike.</p>
-                    </span>
-                </li>
-            </ul>
+</div>
 
-        </div>
-    </div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+<!-- Modal Doktori -->
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header" id="AppCoinsbg">
-          <h5 class="modal-title" id="myModal">LISTA DOKTORA</h5>
+        <div class="modal-header">
+          <h5 class="modal-title">LISTA DOKTORA</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -88,74 +73,135 @@
                     <hr> 
                 <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Mario Ljubimir</strong><br><a href="https://goo.gl/maps/rh9fpHo8kBn">Rathauspl. 2 - Ärztezentrum 8940/Liezen  <i class="fas fa-map-marker-alt"></i></a><br>+43(03612)24441<br><strong>Stručnjak za psihijatriju i neurologiju</strong></p>
                     <hr>
-                <img class="ico" src="img/ico/doctor.svg"><p><strong>Lora Vidic, dr.med.</strong><br><a href="https://goo.gl/maps/nfPjrZG8Kek">Grazer Str. 12, 8480/Mureck  <i class="fas fa-map-marker-alt"></i></a><br>lora.vidic@aon.at<br>+43(0664)5855405<br><strong> Specijalist u psihijatriji. Psihoterapeutska medicina</strong></p>   
+                <img class="ico" src="img/ico/doctor.svg"><p><strong>Lora Vidic, dr.med.</strong><br><a href="https://goo.gl/maps/nfPjrZG8Kek">Grazer Str. 12 8480/Mureck  <i class="fas fa-map-marker-alt"></i></a><br>lora.vidic@aon.at<br>+43(0664)5855405<br><strong> Specijalist u psihijatriji. Psihoterapeutska medicina</strong></p>   
                     <hr>
-                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Michael Schenk</strong><br><a href="https://goo.gl/maps/JnM7W437bdn">Am Sendergrund 11 8501/Lieboch  <i class="fas fa-map-marker-alt"></i></a><br>+43(03136)55111<br><strong> Specijalista ginekologije</strong></p>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Gerald Ressi</strong><br><a href="https://goo.gl/maps/Y5tHrcqLAUF2">Leonhardstraße 38 8010/Graz <i class="fas fa-map-marker-alt"></i></a><br>+43(0664)6463509<br><strong> Stručnjak za psihijatriju i neurologiju</strong></p>
                     <hr>
-                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Christian Schnabl</strong><br><a href="https://goo.gl/maps/Ag6hTvkyg9C2">Rupert-Schmid-Platz 1 8143/Dobl  <i class="fas fa-map-marker-alt"></i></a><br>+43(0664)3925112<br><strong> Psihijatar</strong></p>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Leke Abdyli</strong><br><a href="https://goo.gl/maps/ZLZMuDTv8Tt">Brunngasse 3 8010/Graz  <i class="fas fa-map-marker-alt"></i></a><br>43(0650)8419137<br>lekeabdyli@hotmail.com<br><strong> Opća medicina</strong></p>
                     <hr>
-                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Bojan Vucic</strong><br><a href="https://goo.gl/maps/wsPUiE28kvN2">Bruckerstraße 23a 8101/Gratkorn  <i class="fas fa-map-marker-alt"></i></a><br>ordination@cosmedicpoint.at<br>+43(03124)25000<br><strong> Opća medicina</strong></p>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Univ.Prof. Dr. Klaus Albegger</strong><br><a href="https://goo.gl/maps/6CH1KdqvLCS2">Wartingergasse 37/14 8010/Graz  <i class="fas fa-map-marker-alt"></i></a><br>klaus@albegger-gruen.at<br>+43(0664)4222865<br><strong> Uho-grlo-nos</strong></p>
                     <hr>
-                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Armin Zadra</strong><br><a href="https://goo.gl/maps/NmoapyzV3Sq">Murecker Straße 14-16 8472/Straß  <i class="fas fa-map-marker-alt"></i></a><br>zadra-handchirurgie@aon.at<br>+43(0664)2607108<br><strong> Ortopedija i traumatologija</strong></p>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Vladimir Maricic</strong><br><a href="https://goo.gl/maps/G3Dh9b13JjM2">Theodor-Körner-Straße 54 8010/Graz  <i class="fas fa-map-marker-alt"></i></a><br>vladimir.maricic@gmx.at<br>+43(0676)9259604<br><strong> Stručnjak za internu medicinu</strong></p>
+                    <hr>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Thomas Müller</strong><br><a href="https://goo.gl/maps/BJZ1JnwZFLy">Richard-Wagner-Gasse 25 8010/Graz <i class="fas fa-map-marker-alt"></i></a><br>ordination@rheumadoc.at<br>+43(0699)10034730<br><strong> Stručnjak za internu medicinu</strong></p>
+                    <hr>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Kurt Usar</strong><br><a href="https://goo.gl/maps/KPkiCTx6qim">Keesgasse 11 8010/Graz <i class="fas fa-map-marker-alt"></i></a><br>+43(0316)6758381<br><strong> Opca medicina</strong></p>
+                <hr>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Alexander Doder</strong><br><a href="https://goo.gl/maps/7kU7ta3tr622">Peter-Hauptstraße 141  8042/Sankt-Peter <i class="fas fa-map-marker-alt"></i></a><br>praxis@doder.at<br>+43(0316)426200<br><strong> Stručnjak za internu medicinu</strong></p>
+                <hr>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Alfons Kowatsch</strong><br><a href="https://goo.gl/maps/THUxqJrbSzk">St. Peter Hauptstraße 35 8042/Graz <i class="fas fa-map-marker-alt"></i></a><br>+43(0316)475612<br>office@hormoninstitut-kowatsch.at<br><strong> Liječnik opće prakse - Stručnjak za ginekologiju i porodništvo</strong></p>
+                <hr>
+                <img class="ico" src="img/ico/doctor.svg"><p><strong>Dr. Alexandra Krasnovsky-Ehrenreich</strong><br><a href="https://goo.gl/maps/cWZdBZszNbE2">Fischeraustraße 13 8051/Graz <i class="fas fa-map-marker-alt"></i></a><br>+43(0650)7576133<br>> ordi@dieaerztin.net<br><strong> Opca medicina</strong></p>
+                <hr>
+                <img class="ico" src="img/ico/doctorm.svg"><p><strong>Dr. Robert Miglar</strong><br><a href="https://goo.gl/maps/cpB83mA736D2">Georgigasse 2 8020/Graz <i class="fas fa-map-marker-alt"></i></a><br>+43(0316)585544<br>ordination@drmiglar.at<br><strong> Stručnjak za ginekologiju i porodništvo</strong></p>
+                    <hr>
+                <p><strong>Ako poznajete nekog a da nije na ovoj listi, molim Vas da nam pošaljete informacije na <a href="mailto:poslovneliste@gmail.com">poslovneliste@gmail.com</a></strong></p>
             </span>
         </div>
       
       </div>
     </div>
 </div>
-<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+
+<!-- Modal Advokati -->
+<div class="modal fade" id="myModal2" role="dialog" aria-labelledby="myModal2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header" id="Ethosbg">
-          <h5 class="modal-title" id="myModal1">LISTA ADVOKATA</h5>
+        <div class="modal-header">
+          <h5 class="modal-title">LISTA ADVOKATA</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+            
             <span>
-               <p></p>
+                <img class="ico" src="img/ico/lawyerm.svg"><p><strong>Dr. Andreas Kaufmann</strong><br><a href="https://goo.gl/maps/BytEkASJeuT2">Mariahilferstraße 20/II 8020/Graz <i class="fas fa-map-marker-alt"></i></a><br>office@dklra.at<br>+43(0316)7222950<br><strong>Građevinski zakon, ugovor o izgradnji, korporativno pravo, osnivanje tvrtki, pravo na naknadu i jamstvo, zakon o javnoj nabavi</strong></p>
+                    <hr>
+                <img class="ico" src="img/ico/lawyerm.svg"><p><strong>Dr. Gunther Ledolter</strong><br><a href="https://goo.gl/maps/xQdc5bgPttP2">Friedhofgasse 20 8020/Graz <i class="fas fa-map-marker-alt"></i></a><br>law-office@rath-partner.at<br>+43(0316)70 850<br><strong>Kazneni zakon, Građanski zakon, Ugovorni zakon, Upravni zakon, Internetsko pravo</strong></p>   
+                    <hr>
+                <img class="ico" src="img/ico/lawyerm.svg"><p><strong>Dr. Manfred Rath</strong><br><a href="https://goo.gl/maps/xQdc5bgPttP2">Friedhofgasse 20 8020/Graz <i class="fas fa-map-marker-alt"></i></a><br>law-office@rath-partner.at<br>+43(0316)70 850<br><strong>Poslovni zakon, trgovina. Pravna zaštita, pravo intelektualnog vlasništva, prometno pravo, kazneno pravo, medijski zakon</strong></p>
+                    <hr> 
+                <img class="ico" src="img/ico/lawyerm.svg"><p><strong>Ing. Mag. Georg Siarlidis</strong><br><a href="https://goo.gl/maps/sSZ3jbkTHnF2">Plüddemanngasse 87 8010/Graz <i class="fas fa-map-marker-alt"></i></a><br>office@aspida.at<br>+43(0316)92 29 33<br><strong>Zakon o bankama i tržištu kapitala, zakon o stečaju, restrukturiranje poduzeća, pravo na imovinu i nekretnine, prometni zakon, štetu za nesreću, pravo osiguranja</strong></p>
+                    <hr>
+                <img class="ico" src="img/ico/lawyerm.svg"><p><strong>Mag. Peter Sixt</strong><br><a href="https://goo.gl/maps/zac4fBRjBi32">Brockmanngasse 102 8010/Graz <i class="fas fa-map-marker-alt"></i></a><br>office@sixt.co.at<br>+43(0316)82 69 00<br><strong>Brak i obiteljski zakon, štete i jamstva, naplata, izvršenje, upravno kazneno pravo, opća praksa</strong></p>   
+                    <hr>
+                <img class="ico" src="img/ico/lawyerm.svg"><p><strong>Mag. Klaus Zotter</strong><br><a href="https://goo.gl/maps/ctUY78n3oGB2">rückenkopfgasse 1 8020/Graz <i class="fas fa-map-marker-alt"></i></a><br>raz@reifundpartner.at<br>+43(0316)83 38 40<br><strong>Štete i jamstvo, prometni zakon, štetu za nesreću, pravo osiguranja, medicinska odgovornost, prava pacijenata, zaštita potrošača</strong></p>
+                    <hr>
+                <p><strong>Ako poznajete nekog a da nije na ovoj listi, molim Vas da nam pošaljete informacije na <a href="mailto:poslovneliste@gmail.com">poslovneliste@gmail.com</a></strong></p>
             </span>
         </div>
-      
       </div>
     </div>
 </div>
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+
+<!-- Modal Apoteka -->
+<div class="modal fade" id="myModal3" role="dialog" aria-labelledby="myModal3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header" id="Iotabg">
-          <h5 class="modal-title" id="myModal2">LISTA APOTEKARA</h5>
+        <div class="modal-header">
+          <h5 class="modal-title">LISTA APOTEKA</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+            
             <span>
-                <p></p>
+                <img src="img/ico/medicine.svg">
+                <h2>Ova lista je praza pošto još skupljamo podatke, ako Vi poznajete apoteku gdje pričaju EyYu jezik, molim Vas da nam pošaljete informacije na <a href="mailto:poslovneliste@gmail.com">poslovneliste@gmail.com</a></h2>
             </span>
         </div>
-      
       </div>
     </div>
-
 </div>
-<div class="foter">
-        <p>Copyright &copy; <a href="https://profatech.github.io/" target="_blank">ProfaDesign 2018</a></p>
+
+<!-- Modal Banka -->
+<div class="modal fade" id="myModal4" role="dialog" aria-labelledby="myModal4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">LISTA BANAKA</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                
+                <span>
+                    <img src="img/ico/bank.svg">
+                    <h2>Ova lista je praza pošto još skupljamo podatke, ako Vi poznajete banku gdje pričaju EyYu jezik, molim Vas da nam pošaljete informacije na <a href="mailto:poslovneliste@gmail.com">poslovneliste@gmail.com</a></h2>
+                </span>
+            </div>
+          </div>
+        </div>
     </div>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-29111898-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- Modal Porezni savjetnik -->
+<div class="modal fade" id="myModal5" role="dialog" aria-labelledby="myModal5" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">LISTA BANAKA</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                
+                <span>
+                    <img src="img/ico/receipt.svg">
+                    <h2>Ova lista je praza pošto još skupljamo podatke, ako Vi poznajete poreznog savjetnika koji priča EyYu jezik, molim Vas da nam pošaljete informacije na <a href="mailto:poslovneliste@gmail.com">poslovneliste@gmail.com</a></h2>
+                </span>
+            </div>
+          </div>
+        </div>
+    </div>    
 
-  gtag('config', 'UA-29111898-2');
-</script>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
