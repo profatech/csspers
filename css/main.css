@@ -2,11 +2,11 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    background: url(../img/bg.jpeg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(../img/bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover center center fixed;
+    -moz-background-size: cover center center fixed;
+    -o-background-size: cover center center fixed;
+    background-size: cover center center fixed;
    
 }
 .search .opis{
